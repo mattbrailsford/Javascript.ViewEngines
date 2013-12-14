@@ -1,0 +1,18 @@
+﻿<html>
+    <head>
+        <title>Javascript View Engine</title>
+    </head>
+    
+    <body>
+        <h1>List of supported engines</h1>
+        <ul>
+            @for(var i = 0; i < model.Length; i++) {
+				<li><a href="/@model[i]">@model[i]</a></li>
+            }
+        </ul>
+
+		<p>
+			This page was rendered using Vash
+		</p>
+    </body>
+</html>
