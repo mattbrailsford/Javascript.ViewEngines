@@ -1,4 +1,4 @@
-﻿engines.add({
+﻿JsViewEngines.add({
     name: "Resig",
     extensions: ["resig"],
     template: new Template(function (template, model) {
@@ -7,7 +7,7 @@
     requires: ["resig.js"]
 });
 
-engines.add({
+JsViewEngines.add({
     name: "Haml-js",
     extensions: ["haml"],
     template: new Template(function (template, model) {
@@ -16,7 +16,7 @@ engines.add({
     requires: ["haml.js"]
 });
 
-engines.add({
+JsViewEngines.add({
     name: "Handlebars",
     extensions: ["hb", "hbs", "handlebars"],
     template: new Template(function (template, model) {
@@ -25,7 +25,7 @@ engines.add({
     requires: ["handlebars.js"]
 });
 
-engines.add({
+JsViewEngines.add({
     name: "Jade",
     extensions: ["jade"],
     template: new Template(function (template, model) {
@@ -34,16 +34,16 @@ engines.add({
     requires: ["jade.js"]
 });
 
-    engines.add({
-        name: "Mustache",
-        extensions: ["mustache"],
-        template: new Template(function (template, model) {
-            return Mustache.render(template, model);
-        }),
-        requires: ["mustache.js"]
-    });
+JsViewEngines.add({
+    name: "Mustache",
+    extensions: ["mustache"],
+    template: new Template(function (template, model) {
+        return Mustache.render(template, model);
+    }),
+    requires: ["mustache.js"]
+});
 
-engines.add({
+JsViewEngines.add({
     name: "_",
     extensions: ["us"],
     template: new Template(function (template, model) {
@@ -52,7 +52,7 @@ engines.add({
     requires: ["underscore.js"]
 });
 
-engines.add({
+JsViewEngines.add({
     name: "Vash",
     extensions: ["vash"],
     template: new Template(function (template, model) {

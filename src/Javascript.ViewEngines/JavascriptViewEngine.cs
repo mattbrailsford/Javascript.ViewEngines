@@ -18,7 +18,7 @@
 
         #region IViewEngine Members
 
-        public JavascriptViewEngine(string enginePath = "~/scripts/engines.js", params string[] paths)
+        public JavascriptViewEngine(string enginePath = "~/scripts/Javascript.ViewEngines.js", params string[] paths)
         {
             this._context = new V8ScriptEngine();
             this._extensions = new Dictionary<string, JsEngine>();
@@ -30,7 +30,7 @@
 
             var host = new Host(this._context, this._scriptsPath);
             this._context.AllowReflection = true;
-            this._context.AddHostObject("engines", HostItemFlags.GlobalMembers, host);
+            this._context.AddHostObject("JsViewEngines", HostItemFlags.GlobalMembers, host);
             this._context.AddHostType("Template", typeof(JsEngine.TemplateDelegate));
 
             //should i set up a file watcher?

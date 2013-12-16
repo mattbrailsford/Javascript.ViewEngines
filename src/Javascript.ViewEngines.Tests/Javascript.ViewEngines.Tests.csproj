@@ -123,7 +123,7 @@
     <Content Include="ClearScriptV8-32.dll" />
     <Content Include="ClearScriptV8-64.dll" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\engines.js" />
+    <Content Include="scripts\Javascript.ViewEngines.js" />
     <Content Include="scripts\haml.js" />
     <Content Include="scripts\handlebars.js" />
     <Content Include="scripts\jade.js" />
